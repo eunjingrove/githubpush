@@ -1,0 +1,37 @@
+body {
+    background-color: rgb(235, 235, 235);
+}
+
+/* 아이디 선택자*/
+#title {
+    text-decoration: underline;
+}
+
+/* 클래스 선택자 */
+.my {
+    color: slateblue;
+}
+
+/* 함께 인접 선택자 */
+.my+p {
+    color: aqua;
+}
+
+/* 자손 선택자 */
+.sect3 strong {
+    background-color: yellow;
+}
+
+/* 자식선택자 */
+.sect3>strong {
+    background-color: yellow;
+}
+
+.sect2>* {
+    border: 2px solid red;
+}
+
+/* 오늘 배운 단축키
+- Ctrl + \ 화면 분할
+- Ctrl + ` 터미널
+*/
