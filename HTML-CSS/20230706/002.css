@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'Pretendard-Regular', sans-serif;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+.parents {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    font-size: 20px;
+}
+
+.child {
+    width: 50vw;
+    height: 50vh;
+    font-size: 2em;
+    background-color: salmon;
+}
+
+p {
+    font-size: 4rem;
+}
+
+/* html 기본 사이즈 16px -> 16px * 4 = 64px */
+/* html { font-size: 10px; } 
+    계산하기 편하게 하기 위해 html 사이즈를 10px로 설정하기도 함  */
