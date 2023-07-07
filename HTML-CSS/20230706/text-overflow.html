@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .ellipsis {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .multi-ellipsis {
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            font-size: 20px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ellipsis">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam error explicabo laudantium repudiandae at earum
+        illum nulla asperiores sunt quisquam consequatur accusamus, iste, aliquam neque, facere modi culpa impedit
+        similique!
+    </div>
+
+    <div class="multi-ellipsis">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam error explicabo laudantium repudiandae at earum
+        illum nulla asperiores sunt quisquam consequatur accusamus, iste, aliquam neque, facere modi culpa impedit
+        similique!
+    </div>
+</body>
+
+</html>
