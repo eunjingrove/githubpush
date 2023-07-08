@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'TTTtangsbudaejjigaeB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/TTTtangsbudaejjigaeB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'TTTtangsbudaejjigaeB';
+    margin: 0;
+    text
+}
+
+div {
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border: 6px dotted #8D4BF6;
+    margin-bottom: 20px;
+    color: #2E6FF2;
+    background-color: skyblue;
+}
+
+[class^="box"] {
+    background-image: url(https://github.com/stronger-deer/myBlog/blob/main/img/main-visual.jpg?raw=true);
+}
+
+.box1 {
+    background-clip: border-box;
+}
+
+.box2 {
+    background-clip: padding-box;
+}
+
+.box3 {
+    background-clip: content-box;
+}
+
+.box4 {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
