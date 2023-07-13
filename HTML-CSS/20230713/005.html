@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .btn-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .color-btn {
+            display: flex;
+            gap: 24px;
+        }
+
+        button {
+            background-color: #1A202C;
+            width: 88px;
+            height: 32px;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 14.4px;
+        }
+
+        button:hover {
+            text-decoration: underline 1px #fff;
+            color: #fff;
+        }
+
+        button:active {
+            text-decoration: underline 1px #fff;
+            color: #fff;
+        }
+
+        button:enabled:active {
+            box-shadow: inset;
+        }
+
+        .btn {
+            color: #CBD5DF;
+
+        }
+
+        .btn4:disabled {
+            color: #4A5568;
+        }
+
+        .positive {
+            color: #439AFF;
+        }
+
+        .positive:enabled:hover {
+            border: 1px solid #439AFF;
+            background-color: #439AFF;
+            box-shadow: inset 1px 1px 0 0 #73b4ff
+        }
+
+        .positive:enabled:active {
+            box-shadow: inset 1px 1px 0 0 #3478b3;
+        }
+
+        .positive {
+            color: #439AFF;
+        }
+
+        .negative:enabled:hover {
+            border: 1px solid #EB5757;
+            background-color: #EB5757;
+            box-shadow: inset 1px 1px 0 0 #fd6f62
+        }
+
+        .negative:enabled:active {
+            box-shadow: inset 1px 1px 0 0 #d94242;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn" type="button">Button</button>
+    <button class="btn positive" type="button">Button</button>
+    <button class="btn negative" type="button">Button</button>
+
+    <button class="btn" type="button" disabled>Button</button>
+</body>
+
+</html>

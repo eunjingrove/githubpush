@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        div {
+            background-color: skyblue;
+            width: calc((4px + 100px) * 2);
+        }
+
+        ul,
+        li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            float: left;
+            background-color: gold;
+            width: calc(100% - (20px * 2))/3;
+        }
+
+        li:not(:first-child) {
+            margin-left: 20px;
+        }
+
+        li:nth-child(even) {
+            background-color: seagreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        hello
+    </div>
+
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+
+</html>
