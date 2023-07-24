@@ -1,0 +1,135 @@
+.haelin {
+    width: 300px;
+    margin: 0 auto;
+    height: 310px;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(-45deg, #f7797d, #fbd786, #c6ffdd, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 7s ease infinite;
+        }
+        
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        
+        50% {
+            background-position: 100% 50%;
+        }
+        
+        100% {
+            background-position: 0% 50%;
+        }
+}
+
+.face {
+    position: relative;
+}
+
+.face-shape {
+    position: relative;
+    width: 269px;
+    height: 245px;
+    border-radius: 269px;
+    background: #FADFD7;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 0 14px;
+    z-index: 10;
+}
+
+.top-hair {
+    position: absolute;
+    width: 288px;
+    height: 106px;
+    border-radius: 600px 600px 0px 0px;
+    background: #F18726;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    z-index: 20;
+    margin: 0 5px;
+}
+
+.bottom-hair {
+    position: absolute;
+    width: 276px;
+    height: 240px;
+    background: #F18726;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    filter: blur(2px);
+    margin: 72px 10px;
+}
+
+.eyes {
+    transform: translatey(-6px);
+}
+
+.eye-left {
+    position: absolute;
+    left: 82px;
+}
+
+.eye-right{
+    position: absolute;
+    right: 96px;
+    top: 11px;
+}
+
+.flex {
+    display: flex;
+}
+
+.top-hair :nth-child(1) svg{
+    position: absolute;
+    top: 34px;
+    left: 72px;
+}
+
+.top-hair :nth-child(2) svg {
+    position: absolute;
+    top: 34px;
+    left: 137px;
+}
+
+.top-hair :nth-child(3) svg {
+    position: absolute;
+    top: 34px;
+    left: 201px;
+}
+
+.ear-left img{
+    position: absolute;
+    left: 12px;
+}
+
+.ear-right img{
+    position: absolute;
+    right: 14px;
+}
+
+.mouth {
+    position: absolute;
+    gap: 0;
+    top: 189px;
+    left: 120px;
+    height: 10px;
+}
+
+.line-1,
+.line-2 {
+    width: 13px;
+    height: 1px;
+    background: #000;
+    filter: blur(0.5px);
+    z-index: 100;
+    
+}
+
+.line-1 {
+    transform: translateX(2px) rotate(-33deg);
+}
+
+.line-2 {
+    transform: rotate(33deg);
+}
+
