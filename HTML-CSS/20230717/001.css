@@ -1,0 +1,333 @@
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+}
+
+button {
+    border: 0;
+    background: none;
+    font: inherit;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+body {
+    background-color: #e4e4e4;
+}
+
+main {
+    position: relative;
+    background-color: #ffffff;
+    width: 520px;
+    height: 712px;
+    border-radius: 10px;
+    border: 1px solid var(--c-4-c-4-c-4, #C4C4C4);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main header {
+    border-bottom: 1px solid #C4C4C4;
+    width: 100%;
+}
+
+main h1 {
+    font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    padding: 20px 188px;
+}
+
+.close {
+    position: absolute;
+    top: 22px;
+    right: 24px;
+}
+
+/* hr {
+    width: 100%;
+    background-color: #C4C4C4;
+} */
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.section1 .input-box {
+    display: flex;
+    flex-direction: column;
+    width: 472px;
+}
+
+.section1 .input-box :nth-child(2) {
+    margin-bottom: 10px;
+}
+
+.section1 .input-box .id-box:focus,
+.section1 .input-box .pw-box:focus {
+    outline: 2px solid #F4492E;
+}
+
+.id-box:focus-visible::after {
+    content: '아이디를 입력해 주세요.';
+    position: absolute;
+    top: 0;
+}
+
+.section1 input {
+    border-radius: 5px;
+    border: 1px solid var(--c-4-c-4-c-4, #C4C4C4);
+    padding: 16px 15px;
+}
+
+.section .input-box:nth-child(1) {
+    margin-bottom: 10px;
+}
+
+.stay-login {
+    display: flex;
+    gap: 10px;
+    margin: 17px 0 21px 0;
+    color: var(--767676, #767676);
+    font-size: 16px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.stay-login:focus-visible .stay-img {
+    background-image: url('./images/check-box.svg') 0 0 no-repeat;
+}
+
+.section1 h2 {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 26px 0;
+}
+
+.section1 button {
+    width: 472px;
+    height: 50px;
+    border-radius: 5px;
+    background: #2F80ED;
+    color: #fff;
+    border: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.section1 .account-group {
+    display: flex;
+    color: var(--767676, #767676);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.section1 .account-group a:nth-child(1):after {
+    content: '|';
+    margin: 0 12px 0 12px;
+    text-align: right;
+}
+
+.section2 {
+    border-top: 1px solid #c4c4c4;
+    position: relative;
+    margin-top: 39px;
+}
+
+.section2::before {
+    content: '또는';
+    color: var(--767676, #767676);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    width: 52px;
+    z-index: 100;
+    position: absolute;
+    background-color: #ffffff;
+    text-align: center;
+    top: -10px;
+    left: 210px;
+}
+
+.section2 ul {
+    margin-top: 28px;
+}
+
+.section2 li button {
+    width: 472px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid var(--767676, #767676);
+    margin: 10px auto;
+}
+
+.section2 li img {
+    padding-left: 12px;
+}
+
+.section2 .facebook {
+    border: 1px solid #2D9CDB;
+}
+
+.section2 .naver {
+    border-color: #00BF18;
+}
+
+.section2 .kakao {
+    border-color: #F2C94C;
+}
+
+.section2 li p {
+    width: 100%;
+    color: #767676;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+[class^="icon"]::before {
+    background-image: url('./images/icon_sprites.png');
+}
