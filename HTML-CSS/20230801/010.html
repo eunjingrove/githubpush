@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <script>
+              let str = "Hello world";
+
+              // slice(시작인덱스, 종료인덱스)
+              // 종료 인덱스 바로 직전(-1)까지 잘라냅니다.
+
+              console.log(str.slice(0,5));
+              console.log(str.slice(0,7));
+              console.log(str.slice(7,3)); // 작동은 하지만 빈 문자열이 나옵니다.
+
+              console.log(str.slice(2));
+              console.log(str.slice(, 5)); // error
+              console.log(str.slice(-6, 0)); // 작동은 하지만 빈 문자열이 나옵니다.
+
+              console.log(str.slice(-6));
+
+              // substring(시작인덱스, 종료인덱스)
+              // 시작인덱스부터 종료 인덱스 바로 직전(-1)까지 잘라냅니다.
+              console.log(str.substring(0,5));
+              console.log(str.substring(0,7));
+
+            //   let str1 = 'CEO leehojun';
+            //   let str2 = 'CTO kimdohyeon';
+
+      // // 문제: 홍길동이 반역을 일으켜 이호준이 회사에 CEO 자리에서 물러나고, CTO가 되었습니다. 아래 문구를 출력 문자열로 변경해주세요. indexOf, search, slice, substring 4개를 사용하여 출력문자열을 출력해주세요.(indexOf, search 2개 중 하나 사용 필수이며, slice, substring 2개 중 하나 사용 필수)
+      let 문제예문 = "paullab CEO 이호준 CTO 홍길동";
+
+      // 출력 문자열
+      // 1. CEO 홍길동
+      // 2. CTO 이호준
+      let CEO의위치 = 문제예문.indexOf("CEO")
+      let CTO의위치 = 문제예문.indexOf("CTO")
+
+      let CEO = 문제예문.slice(CEO의위치+4, CTO의위치-1);
+      let CTO = 문제예문.slice(CTO의위치+4);
+
+      console.log(`1. CEO ${CTO}`)
+      console.log(`2. CTO ${CEO}`)
+    </script>
+  </body>
+</html>
