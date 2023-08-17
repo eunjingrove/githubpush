@@ -18,15 +18,13 @@ const student = [
     }
 ];
 
-for (let i = 0; i < student.length; i++) {
-    student.sort(function (a, b) {
-        if (a.product > b.product) {
-            return -1;
-        } else if (a.product < b.product) {
-            return 1;
-        } else {
-            return 0;
-        }
-    })
-    console.log(`${student[i].name}`);
-}
+student.sort(function (a, b) {
+    if (a.product > b.product) {
+        return -1;
+    } else if (a.product < b.product) {
+        return 1;
+    } else {
+        return 0;
+    }
+})
+console.log(`${student[i].name}`);

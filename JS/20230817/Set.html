@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        // 중복을 허용하지 않는 데이터 형식
+        // for of문을 활용해서 데이터를 순환할 수 있다.
+
+        let s = new Set('abcdeeeeeeee'); // ['a', 'b', 'c', 'd', 'e'] 중복 x
+        let ss = new Set('abedee,eeeeeeeeee'.split('')); // ['a', 'b', 'c', 'd', 'e'] 중복 x
+
+        let a = new Set('abc'); // ['a', 'b', 'c']
+        let b = new Set('cde'); // ['c', 'd', 'e']
+
+        // 교집합 (둘 다 가지고 있는 데이터 )
+        const cross = [...a].filter((value) => {
+            return b.has(value);
+        });
+
+        // ['c'] 만 담겨있는 배열을 반환 
+
+        // 합집합
+        const union = new Set([...a].concat([...b]));
+        // {'a', 'b', 'c', 'd', 'e'} c가 두 개지만 중복을 허용하지 않기 때문에 하나만 들어간다.
+
+        // 차집합 
+        const differ = [...a].filter((value) => {
+            return !b.has(value); //b에 없는 값을 찾을 때 
+        })
+        // ['a','b']
+    </script>
+
+</body>
+
+</html>

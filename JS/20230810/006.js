@@ -18,5 +18,7 @@ function lottoGenerater() {
             lottoArr.push(result);
         }
     }
-    return lottoArr;
+    return lottoArr.sort((a, b) => a - b);
 }
+
+console.log(lottoGenerater());
