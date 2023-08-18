@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .box {
+            margin: 0 auto;
+            width: 550px;
+            height: 550px;
+            border: 1px solid #dddddd;
+        }
+
+        .btnWrap {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 40px;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+
+        .yellow {
+            background-color: yellow;
+        }
+
+
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <ul class="btnWrap">
+        <li>
+            <button type="button">빨강</button>
+        </li>
+        <li>
+            <button type="button">노랑</button>
+        </li>
+        <li>
+            <button type="button">초록</button>
+        </li>
+    </ul>
+
+    <script>
+        const color = ['red', 'yellow', 'green']
+        const box = document.querySelector('.box');
+        const btns = document.querySelectorAll('button');
+
+        function colorChange() {
+            for (let i = 0; i < btns.length; i++) {
+                btns[i].addEventListener('click', function () {
+                    box.className = 'box';
+                    // box.classList.remove('red', 'yellow', 'green');
+                    box.classList.add(color[i]);
+                })
+            }
+        }
+
+        colorChange();
+    </script>
+</body>
+
+</html>
