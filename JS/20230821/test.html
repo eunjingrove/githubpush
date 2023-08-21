@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요소 제어</title>
+    <style>
+        .blue {
+            color: blue;
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body>
+    <strong class="sayHi">반갑습니다. 저는</strong>
+    <ul></ul>
+    <button type="button">버튼</button>
+    <p></p>
+    <input type="text">
+    <button>Write Something</button>
+    <img class="terran battle-cruiser" src="battle-cruiser.png" data-ship-id="324" data-weapons="laser"
+        data-health="400" data-mana="250" data-skill="yamato-cannon" />
+    <script>
+        const btn = document.querySelector('button');
+        btn.addEventListener('click', function () {
+            btn.classList.toggle('blue')
+            for (let i = 0; i < 5; i++) {
+                const li = document.createElement('li');
+                const btnDel = document.createElement('button');
+                const btnText = document.createTextNode('버튼이다');
+
+                btnDel.append(btnText);
+                btnDel.addEventListener('click', () => {
+                    li.remove();
+                });
+                li.append('삭제하기', btnDel);
+                ul.appendChild(li);
+            }
+        })
+        const text = document.querySelector('p');
+        const input = document.querySelector('input');
+        const button = document.querySelector('button');
+
+        button.addEventListener('click', () => {
+            text.textContent = input.value;
+        })
+
+        const sayHi = document.querySelector('.sayHi');
+        sayHi.insertAdjacentHTML('afterend', '<span> 안녕하세요. </span>');
+        sayHi.insertAdjacentHTML('beforebegin', '<span> 오랜만에 뵙습니다. </span>');
+
+    </script>
+</body>
+
+</html>
