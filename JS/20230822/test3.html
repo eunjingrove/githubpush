@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <h1>나의 todo list</h1>
+    <p>1. 오늘 저녁에는 부대찌개를 끓여 먹겠다.<button type="button">삭제</button></p>
+    <p>2. 후식으로 슈팅스타를 먹겠다.<button type="button">삭제</button></p>
+    <p>3. 자기 전에 반드시 내일 아침 메뉴를 생각해두겠다.<button type="button">삭제</button></p>
+    <!-- html 구조 상 p태그 안에 button이 있기 때문에 버블링으로 상위에 이벤트가 전파되기 때문에 이벤트를 실행되지 않기 위한 코드를 작성해야 한다. -->
+    <script>
+        const ps = document.querySelectorAll('p');
+        ps.forEach((item) => {
+            item.addEventListener('click', () => {
+                alert(item.firstChild.textContent);
+                // 삭제 버튼의 텍스트까지 나오기 때문에 firstChild로 제어 
+            })
+        });
+
+        const btns = document.querySelectorAll('button');
+        btns.forEach((item) => {
+            item.addEventListener('click', (event) => {
+                const result = confirm('삭제하시겠습니까?');
+                event.stopPropagation(); // 왜 이벤트가 상위에 다시 나타나는지 물어보자. 
+                if (result) {
+                    item.closest('p').remove();
+                    //item.parentElement.remove();
+                    // item.parentNode도 가능하나 띄어쓰기와 같은 작은 요소까지 포함되기 때문에 parentElement를 쓰는 것을 추천 
+                    // closest는 자기를 포함해서 가장 가까운 상위요소에 접근 
+                }
+            })
+        });
+
+
+    </script>
+</body>
+
+</html>
