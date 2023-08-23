@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        // 프로퍼티를 비공개
+        class Robot {
+            #important // 비공개 프로퍼티는 클래스 안에서 #을 붙여서 사용 
+
+            constructor(name, info) {
+                this.name = name;
+                this.#important = info;
+            }
+
+            sayYourName() {
+                console.log(`삐리비리. ${this.name}입니다. 주인님`);
+            }
+        }
+
+        class BabyRobot {
+            constructor() {
+                super();
+            }
+        }
+
+
+        // private 프로퍼티 접근, 수정 
+        const robot = new Robot('재현', 12312123);
+
+        class Robot2 {
+            #password
+
+            constructor(name, pw) {
+                this.name = name;
+                this.#password = pw;
+            }
+
+
+            sayYourName() {
+                console.log(`삐리비리. 제 이름은 ${this.name}입니다. 주인님.`);
+            }
+
+            getPassword() {
+                return this.#password // 이 인스턴스의 패스워드를 가져오겠다.
+            }
+
+            setPassword(pw) {
+                this.#password = pw; // 이 인스턴스의 패스워드에 새로운 값을 넣겠다. 
+            }
+        }
+
+        const robot2 = new Robot2('재현', 123123);
+        console.log(robot2.getPassword());
+        // console.log(robot2.setPassword(456456));
+
+    </script>
+</body>
+
+</html>
