@@ -11,25 +11,25 @@
 <body>
     <script>
         class Robot {
-            constructor(name) {
+            #password
+
+            constructor(name, pw) {
                 this.name = name;
+                this.#password = pw;
             }
 
             sayYourName() {
-                console.log(`삐리비리. 제 이름은 ${this.name} 입니다.`);
+                console.log(`삐리비리. 제 이름은 ${this.name}입니다. 주인님`);
+            }
+
+            getPassword() {
+                return this.#password
+            }
+
+            setPassword() {
+                this.#password = pw;
             }
         }
-
-        class Phone {
-            constructor(phoneName) {
-                this.phoneName = phoneName;
-            }
-
-            sayPhoneName() {
-                console.log(`내 폰은 ${this.phonName}이야`);
-            }
-        }
-
     </script>
 </body>
 
