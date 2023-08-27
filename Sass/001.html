@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>8조</title>
+
+    <style>
+        .container {
+            width: 1280px;
+            margin: auto;
+            border: 1px solid red;
+        }
+
+        .inner1 {
+            /* height: 260px; */
+        }
+
+        .inner2 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .inner2-1 {
+            width: 830px;
+        }
+
+        .inner2-2 {
+            width: 420px;
+        }
+
+        /******* .one  *******/
+
+        .inner1 {
+            display: inline-block;
+            border: 1px solid #03c75a;
+            border-radius: 33px;
+        }
+
+        .inner1 h1 {
+            position: absolute;
+            display: inline-block;
+            margin: 0;
+            padding: 17px 17px 17px 27px;
+        }
+
+        .inner1 .logo-box>svg {
+            fill: #03c75a
+        }
+
+        .search-btn {
+            border-radius: 0 40px 40px 0;
+        }
+    </style>
+
+    <link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="inner1">
+
+            <h1>
+                <a class="logo-box">
+                    <svg>
+                        <path d="M16.273 12.845 7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727v12.845z"></path>
+                    </svg>
+                </a>
+            </h1>
+            <input type="search">
+            <img>
+            <button type="button" class="search-btn">버튼</button>
+        </div>
+        <div class="two">연정</div>
+    </div>
+    <div class="inner2">
+        <div class="three inner2-1">지은</div>
+        <div class="inner2-2">
+            <div class="four">승무</div>
+            <div class="five">예진</div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
