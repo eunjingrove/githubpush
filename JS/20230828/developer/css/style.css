@@ -62,6 +62,7 @@ path {
     background-color: royalblue;
     color: white;
     text-align: center;
+    padding-top: -10px;
 }
 
 .modal ul {
