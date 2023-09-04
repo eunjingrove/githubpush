@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        // async 함수 안에서 코드의 실행 순서를 확정 지을 수 있다 !
+        // async를 통해 비동기적 코드를 동기적으로 전환할 수 있다. 
+        async function message() {
+            const hello = await new Promise((resolve) => { // await 키워드가 나오면 자바스크립트 엔진이 여기서 기다린다. 
+                setTimeout(() => {
+                    resolve('hello');
+                }, 100);
+            });
+
+            const world = await new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve('world');
+                }, 100);
+            });
+
+            console.log(`${hello} ${world}`)
+        }
+    </script>
+</body>
+
+</html>
