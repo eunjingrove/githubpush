@@ -77,8 +77,7 @@ class VendingMachineFunc {
                     this.myMoney.textContent = new Intl.NumberFormat().format
                         (myMoneyVal - inputCost) + '원';
 
-                    this.balance.textContent = new Intl.NumberFormat().format
-                        (balanceVal ? balanceVal : 0 + inputCost) + '원'
+                    this.balance.textContent = new Intl.NumberFormat().format((balanceVal ? balanceVal : 0) + inputCost) + ' 원';
                 } else {
                     alert('소지금이 부족합니다.')
                 }

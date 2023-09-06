@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        function Header(props) {
+            return (
+                <div>Header
+                    <div>menu</div>
+                    <div>{props.menuOne}</div>
+                    <div>{props.menuTwo}</div>
+                </div>
+            )
+        }
+
+        // const body = (
+        //     <div>
+        //         {Header('about', 'product')}
+        //     </div>
+        // );
+
+        // 속성의 형태로 전달 (키="값")
+        const body = (
+            <div>
+                <Header menuOne='about' menuTwo='product' />
+                {1 + 1}
+                {'hello' + 'word'}
+            </div>
+        )
+
+        const root = ReactDOM.createRoot(document.querySelector('#root'));
+        root.render(body);
+
+        Header() 
+    </script>
+</body>
+
+</html>
