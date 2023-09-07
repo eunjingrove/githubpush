@@ -1,0 +1,17 @@
+.list-area {
+    list-style: none;
+    padding: 0;
+}
+
+.list-area li {
+    border: 1px solid #000;
+}
+
+.list-area li+li {
+    border-top: none;
+}
+
+.list-area .visited {
+    background-color: royalblue;
+    color: #fff;
+}

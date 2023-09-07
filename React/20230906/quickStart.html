@@ -13,34 +13,101 @@
 
 <body>
     <div id="root"></div>
+    <div>
+        <header>
+            <h1>hello world shop</h1>
+            <nav>
+                <ul>
+                    <li>링크1</li>
+                    <li>링크2</li>
+                    <li>링크3</li>
+                    <li>링크4</li>
+                    <li>링크5</li>
+                </ul>
+            </nav>
+        </header>
 
-    <script type="text/babel">
-        // react 컴포넌트 정의하기
-        const el = React.createElement;
+        <main>
+            <h2>hello world!</h2>
+            <p>product list</p>
+            <ul>
+                <li>best seller 옷1</li>
+                <li>best seller 옷2</li>
+                <li>best seller 옷3</li>
+                <li>best seller 옷4</li>
+                <li>best seller 옷5</li>
+                <li>best seller 옷6</li>
+                <li>best seller 옷7</li>
+                <li>best seller 옷8</li>
+                <li>best seller 옷9</li>
+                <li>best seller 옷10</li>
+            </ul>
+        </main>
 
-        class HelloButton extends React.Component {
-            constructor(props) {
-                super(props);
+        <footer>
+            <h2>hello footer!</h2>
+            <address>제주시 인다 1길</address>
+        </footer>
+    </div>
 
-                this.state = { liked: false };
-            }
-
-            render() {
-                if (this.state.liked) {
-                    return <p>Hello World!</p>;
-                }
-
-                return (
-                    <button onClick={() => this.setState({ liked: true })}>
-                        Hello
-                    </button>
-                );
-            }
+    <script>
+        function header() {
+            return (
+                <header>
+                    <h1>hello world shop</h1>
+                    <nav>
+                        <ul>
+                            <li>링크1</li>
+                            <li>링크2</li>
+                            <li>링크3</li>
+                            <li>링크4</li>
+                            <li>링크5</li>
+                        </ul>
+                    </nav>
+                </header>
+            )
         }
 
-        const domContainer = document.querySelector('#root');
-        // react-dom UI 구성요소를 만들고 관리하는 목적의 라이브러리입니다. 
-        ReactDOM.render(el(HelloButton), domContainer);
+        function main() {
+            return (
+                <main>
+                    <h2>hello world!</h2>
+                    <p>product list</p>
+                    <ul>
+                        <li>best seller 옷1</li>
+                        <li>best seller 옷2</li>
+                        <li>best seller 옷3</li>
+                        <li>best seller 옷4</li>
+                        <li>best seller 옷5</li>
+                        <li>best seller 옷6</li>
+                        <li>best seller 옷7</li>
+                        <li>best seller 옷8</li>
+                        <li>best seller 옷9</li>
+                        <li>best seller 옷10</li>
+                    </ul>
+                </main>
+            )
+
+        }
+
+        function footer() {
+            return (
+                <footer>
+                    <h2>hello footer!</h2>
+                    <address>제주시 인다 1길</address>
+                </footer>
+            )
+
+        }
+
+        const body = (
+            <div>
+                <header />
+                <main />
+                <footer />
+            </div>
+        )
+
 
     </script>
 </body>
