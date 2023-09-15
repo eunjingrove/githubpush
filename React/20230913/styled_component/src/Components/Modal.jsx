@@ -1,19 +1,55 @@
 import React from 'react'
+import styled from 'styled-components'
 
-function Button(props) {
-    const { text, onClick } = props;
+const CardDiv = styled.div`
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #c4c4c4;
+    border-radius: 20px;
+    width: ${(props) => (props.className === 'setting' ? '200px' : '400px')};
+`
+const Card = (props) => {
     return (
-        <button onClick={onClick}>{text}</button>
+        <CardDiv>
+            <h3>{props.value}</h3>
+            <hr />
+            <div>{props.children}</div>
+        </CardDiv>
     )
 }
 
-export default function Modal(props) {
-    const { title, content, onClose } = props;
+const SettingDiv = () => {
+    return (
+        <>
+            <button>초기화</button>
+            <button>저장하기</button>
+        </>
+    )
+}
+
+const ShareDiv = () => {
+    return (
+        <>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur minima deserunt rem fuga, minus itaque a quo, tenetur nemo sed sint est nisi repellat facere mollitia in earum. Rerum, id?</p>
+            <div>
+                <button>이미지 저장</button>
+                <button>트위터</button>
+                <button>페이스북</button>
+            </div>
+        </>
+    )
+}
+
+export default function Modal() {
     return (
         <div>
-            <h2>{title}</h2>
-            <p>{content}</p>
-            <Button text='Close' onClick={onClose}></Button>
+            <Card className='setting' value='챌린지 설정'>
+                <SettingDiv />
+            </Card>
+            <Card className='share' value='서비스 공유하기'>
+                <ShareDiv />
+            </Card>
         </div>
     )
 }
+
