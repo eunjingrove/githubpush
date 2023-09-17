@@ -18,14 +18,18 @@ const TrainingDay = () => {
     const [day, setDay] = useState('');
 
     return (
-        <>
+        <div className='be-trained'>
             <Goal setTobecome={setTobecome} setDay={setDay} />
-            <p>당신은 {tobecome} 전문가가 되기 위해서</p>
-            <p>대략 {day}일 이상 훈련하셔야 합니다:)</p>
-            <button onClick={goModal}>훈련하러 가기 GO!GO!</button>
-            {modalShow && <GoModal />}
-            <button>공유하기</button>
-        </>
+            <div className='train'>
+                <p className='flex-wrap'>당신은&nbsp;&nbsp;<span className='bold'>{tobecome}</span>&nbsp;&nbsp;전문가가 되기 위해서</p>
+                <p className='flex-wrap'>대략&nbsp;&nbsp;<span className='bold'>{day}</span>&nbsp;일 이상 훈련하셔야 합니다:)</p>
+            </div>
+            <div className='flex-wrap gap-10 btn-wrap'>
+                <button className='yellowBtn' onClick={goModal}>훈련하러 가기 GO!GO!</button>
+                {modalShow && <GoModal />}
+                <button className='whiteBtn'>공유하기</button>
+            </div>
+        </div>
     )
 }
 export default TrainingDay 
