@@ -1,0 +1,40 @@
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal .modal-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+    color: #5B2386;
+    padding: 76px 126px 68px;
+}
+
+#modal h2 {
+    font-size: 66px;
+}
+
+#modal h3 {
+    font-size: 36px;
+}
+
+#modal img {
+    max-width: 344px;
+}
+
+#modal .btn-close {
+    margin-top: 74px;
+}
