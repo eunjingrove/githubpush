@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1><img src="./images/weniv-logo.svg" alt="weniv"></h1>
+    </header>
+    <main>
+        <h2 class="tit-timer">TIMER</h2>
+        <hr />
+        <div class="time">
+            <p class="hour">HRS
+                <img src="./images/box.svg" alt="">
+                <input type="number" placeholder="00" class="hour-num">
+            </p>
+            <img class="dots" src="images/dot.svg" alt="">
+            <p class="min">MIN
+                <img src="./images/box.svg" alt="">
+                <input type="number" placeholder="00" class="min-num" onChange="inputMin">
+            </p>
+            <img class="dots" src="images/dot.svg" alt="">
+            <p class="sec">SEC
+                <img src="./images/box.svg" alt="">
+                <input type="number" placeholder="00" class="sec-num">
+            </p>
+        </div>
+        <div class="btn-wrap">
+            <button class="btn-start" type="button"><img src="./images/icon-start.svg" alt="시작 버튼"> &nbsp;START</button>
+            <button class="btn-reset" type="button"><img src="./images/icon-reset-disabled.svg" alt="리셋 버튼">
+                &nbsp;RESET</button>
+        </div>
+    </main>
+    <footer>
+        <p>
+            ⓒ WENIV Corp.
+        </p>
+    </footer>
+    <script>
+        const startBtn = document.querySelector('.btn-start');
+        startBtn.addEventListener('click', (inputMin) => {
+            const hour = document.querySelector('.hour-num').value;
+            const min = document.querySelector('.min-num').value;
+            const sec = document.querySelector('.sec-num').value;
+        })
+
+        resetBtn.addEventListener('click', () => {
+            hour.textContent = '';
+            min.textContent = '';
+            sec.textContent = '';
+        })
+    </script>
+</body>
+
+</html>

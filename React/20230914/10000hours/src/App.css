@@ -120,6 +120,11 @@ button {
     cursor: pointer;
 }
 
+img {
+    display: inline-block;
+    content: "";
+}
+
 .bold {
     font-size: 72px;
     font-weight: 700;
@@ -128,4 +133,220 @@ button {
 .light {
     font-weight: 300;
     font-size: 18px;
+    margin: 0 14px;
+}
+
+.title-wrap {
+    position: relative;
+    height: 265px;
+    text-align: center;
+    margin: 120px 0 66px;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    /* background: url('./image/title.svg') no-repeat center center; */
+    position: absolute;
+    width: 564px;
+    height: 100%;
+    z-index: 10;
+    border: none;
+}
+
+.time {
+    background: url('./image/time.svg') no-repeat center center;
+    position: absolute;
+    z-index: -10;
+    width: 261px;
+    height: 265px;
+}
+
+
+.flex-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.rule {
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 102px;
+}
+
+.ruleHours {
+    color: #F5DF4D;
+    text-align: center;
+    font-family: 'OTEnjoystoriesBA', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 76px;
+}
+
+.rule .bold {
+    font-size: 24px;
+}
+
+.quotes {
+    /* color: rgba(252, 238, 33, 0.30);
+    text-align: center;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-family: 'GmarketSansMedium', sans-serif; */
+}
+
+.quote-left,
+.quote-right {
+    width: 46px;
+    height: 96px;
+}
+
+.quote-left {
+    background: url('./image/“.png') no-repeat center center;
+}
+
+.quote-right {
+    background: url('./image/”.png') no-repeat center center;
+}
+
+.goal-form {
+    font-size: 24px;
+    margin-bottom: 115px;
+}
+
+.goal-input {
+    width: 228px;
+    height: 57px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+}
+
+.goal-input::placeholder {
+    color: #BABCBE;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'GmarketSansMedium', sans-serif;
+}
+
+.i-will {
+    margin-bottom: 27px;
+}
+
+.training-time {
+    margin-bottom: 115px;
+}
+
+.yellowBtn {
+    padding: 21px 49px;
+    border-radius: 56px;
+    background: #FCEE21;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.50);
+    color: #5B2386;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'GmarketSansMedium', sans-serif;
+    border: none;
+}
+
+.yellowBtn:hover {
+    background-color: #663be8;
+    color: #FFF;
+    transition: all 0.3s;
+}
+
+.clickImg {
+    background: url('./image/click.png') no-repeat center center;
+    width: 64px;
+    height: 72px;
+    transform: translate(10px, 15px);
+}
+
+.whiteBtn {
+    padding: 21px 49px;
+    border-radius: 56px;
+    background: #FFF;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.50);
+    color: #5B2386;
+    font-size: 24px;
+    font-family: 'GmarketSansMedium', sans-serif;
+    font-weight: 700;
+}
+
+.whiteBtn:hover {
+    background-color: #c0c0c0;
+    transition: all 0.2s;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.train {
+    margin-bottom: 127px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.btn-wrap {
+    margin-bottom: 130px;
+}
+
+.wenivImg {
+    background: url('./image/weniv-logo.png') no-repeat center center;
+    width: 125px;
+    height: 25px;
+    margin-bottom: 20px;
+}
+
+.footer-info {
+    font-size: 12px;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: 'notosanskr', sans-serif;
+    margin-bottom: 124px;
+}
+
+.licatImg {
+    background: url('./image/licat.png') no-repeat center center;
+    width: 433px;
+    padding: 4px 1.04px 0px 2px;
+    height: 293px;
+    margin: 74px 0;
+}
+
+.modal {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'OTEnjoystoriesBA', sans-serif;
+    font-weight: 700;
+    color: #5B2386;
+    width: 947px;
+    border-radius: 30px;
+    position: absolute;
+    transform: translate(0%, -50%);
+    cursor: pointer;
+}
+
+.modal>h3 {
+    font-size: 96px;
+    margin-top: 54px;
+}
+
+.modal>p {
+    font-size: 36px;
+}
+
+.modal>button {
+    margin-bottom: 68px;
 }

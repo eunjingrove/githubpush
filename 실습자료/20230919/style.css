@@ -1,0 +1,251 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    background: radial-gradient(293.21% 130.49% at 3.59% 5.28%, #F0F4FF 0%,
+            #A5B6EE 100%) no-repeat;
+    color: #fff;
+    text-align: center;
+    font-family: 'Pretendard-Regular', sans-serif;
+}
+
+header {
+    margin-top: 72px;
+}
+
+main {
+    width: 400px;
+    height: 360px;
+    border-radius: 16px;
+    background: var(--gradient, linear-gradient(144deg, #5572BB 2.13%, #374B7C 102.97%));
+    box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.40);
+    margin: 60px auto;
+}
+
+main hr {
+    width: 312px;
+    border: 1px solid #3D538A;
+    box-shadow: 0 2px 2px -4px #5B75B4;
+    margin: 23px auto 33px;
+}
+
+.tit-timer {
+    font-size: 24px;
+    padding-top: 48px;
+    font-weight: 700
+}
+
+.time {
+    display: inline-flex;
+
+}
+
+.time .hour,
+.min,
+.sec {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: 700;
+    color: #A5B6EE;
+    position: relative;
+    gap: 4px;
+}
+
+.hour-num {}
+
+.hour-num,
+.min-num,
+.sec-num {
+    position: absolute;
+    transform: translate(25%, 65%);
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    width: 58px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.dots {
+    margin: 13px 11px 0;
+}
+
+.btn-wrap {
+    margin-top: 40px;
+
+}
+
+.btn-start,
+.btn-reset {
+    width: 112px;
+    height: 48px;
+    border-radius: 50px;
+    background: #324577;
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.05) inset;
+    border: none;
+    color: #617199;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: 'Pretendard-Regular',
+        sans-serif;
+}
+
+.btn-start {
+    margin-right: 7px;
+}
+
+footer {
+    margin-bottom: 103px;
+    color: #8596BF;
+    font-size: 14px;
+    font-weight: 400;
+}

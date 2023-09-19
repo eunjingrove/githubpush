@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState } from 'react'
-import './Goal.css'
 
 
 
@@ -35,8 +34,8 @@ const Goal = ({ setTobecome, setDay }) => {
                     <input className='goal-input' type='number' value={time} onChange={(event) => setTime(event.target.value)} placeholder='예)5시간'></input>
                     <span>&nbsp; 시간씩 훈련할 것이다.</span>
                 </div>
-                <div className='flex-wrap btn-wrap'>
-                    <button className='yellowBtn'>나는 며칠동안 훈련해야 1만 시간이 될까?
+                <div className='flex-wrap'>
+                    <button button type='submit' className='yellowBtn'>나는 며칠동안 훈련해야 1만 시간이 될까?
                     </button>
                     <img className='clickImg' />
                 </div>

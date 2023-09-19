@@ -1,0 +1,193 @@
+/* header style 시작 */
+header {
+    margin-bottom: 95px;
+}
+
+.tit-law {
+    position: relative;
+}
+
+.tit-law .img-tit {
+    position: relative;
+    z-index: 10;
+    max-width: 564px;
+}
+
+.tit-law::after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 225px;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    background-image: url('../../images/title_bg.png');
+    background-position: center;
+    background-size: contain;
+    aspect-ratio: 1/1;
+}
+
+.img-txt {
+    max-width: 486px;
+    margin: 125px auto 85px;
+}
+
+.txt-desc {
+    position: relative;
+    max-width: 475px;
+    margin: 0 auto;
+    line-height: 24px;
+    font-size: 18px;
+}
+
+.txt-desc .tit-desc {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.txt-desc::before,
+.txt-desc::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    width: 37px;
+    height: 32px;
+    margin-top: -14px;
+}
+
+.txt-desc::before {
+    left: 0;
+    background-image: url("../../images/txt-left.png");
+}
+
+.txt-desc::after {
+    right: 0;
+    background-image: url("../../images/txt-right.png");
+}
+
+/* header style 끝 */
+
+
+/* main style 시작 */
+main {
+    margin-bottom: 130px;
+}
+
+.cont-input,
+.cont-result {
+    font-size: 24px;
+    list-style: 24px;
+}
+
+.cont-input .txt-wannabe {
+    margin-bottom: 30px;
+}
+
+.cont-input .txt-time {
+    margin-bottom: 120px;
+}
+
+.cont-input input {
+    width: 224px;
+    height: 57px;
+    border-radius: 7px;
+    font-size: 24px;
+    outline: none;
+    text-align: center;
+    border: none;
+    margin: 0 17px;
+}
+
+.cont-input .btn-exc {
+    position: relative;
+}
+
+.cont-input .btn-exc::after {
+    content: '';
+    position: absolute;
+    background-image: url('../../images/hand.png');
+    width: 64px;
+    height: 72px;
+    right: -70px;
+    bottom: -20px;
+}
+
+.cont-result .txt-wannabe {
+    margin: 147px 0 127px;
+    list-style-type: 72px;
+}
+
+.cont-result .txt-wannabe strong {
+    margin: 0 12px;
+    font-size: 72px;
+    font-family: 'GmarketSansBold', sans-serif;
+    vertical-align: -14px;
+}
+
+.btn-share {
+    margin-left: 18px;
+    background-color: #FFF;
+}
+
+/* main style 끝 */
+
+
+/* footer style 시작 */
+.cont-footer {
+    padding-bottom: 70px;
+    font-family: Noto Sans KR, sans-serif;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.cont-footer .img-footer {
+    width: 125px;
+    margin-bottom: 20px;
+}
+
+/* footer style 끝 */
+
+/* modal style 시작 */
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal .modal-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+    color: #5B2386;
+    padding: 76px 126px 68px;
+}
+
+#modal h2 {
+    font-size: 66px;
+}
+
+#modal h3 {
+    font-size: 36px;
+}
+
+#modal img {
+    max-width: 344px;
+}
+
+#modal .btn-close {
+    margin-top: 74px;
+}
+
+/* modal style 끝 */
