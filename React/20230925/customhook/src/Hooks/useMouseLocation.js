@@ -16,7 +16,6 @@ function useMouseLocation(initVal) {
     }, []);
 
     return mouseLocation;
-
 }
 
 export default useMouseLocation;
