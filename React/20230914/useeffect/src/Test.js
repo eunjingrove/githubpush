@@ -19,10 +19,6 @@ function Time() {
         }
     })
 
-
-
-
-
     return (
         <>
             <h1>시간: {hour}시 {min}분 {sec}초</h1>
