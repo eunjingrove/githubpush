@@ -34,8 +34,6 @@ function Test() {
         } catch (error) {
             console.error(error)
         }
-
-
     }
 
     useEffect(() => {

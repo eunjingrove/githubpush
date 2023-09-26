@@ -19,6 +19,8 @@
         // state는 현재 상태, action은 주문 받은 것! 
         function reducer(state, action) {
             console.log(state, action);
+
+            // state 초기화 
             if (state === undefined) {
                 return { color: 'yellow' }
             }
