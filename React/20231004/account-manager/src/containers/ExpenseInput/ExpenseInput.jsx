@@ -7,9 +7,8 @@ export default function ExpenseInput() {
     const dispatch = useDispatch();
     // 지출 이름을 관리합니다.
     const [name, setName] = useState('');
-    // 지출 금액을 관리합니다. 
+    // 지출 금액을 관리합니다.
     const [price, setPrice] = useState(0);
-
 
     function submit(event) {
         event.preventDefault();

@@ -30,5 +30,5 @@ const expenseSlice = createSlice({
 // action을 디스패치에서 사용할 수 있도록 밖으로 내보낸다.
 export const { addExpenseAction, setIncomeAction } = expenseSlice.actions;
 
-// slice에서 생성한 reducer들을 외부로 내보낸다.
+// slice에서 생성한 reducer들을 외부로 내보낸다. 
 export default expenseSlice.reducer

@@ -22,7 +22,7 @@ function ExpenseTotal() {
             </div>
             <div>
                 <span>잔액: </span>
-                <span>₩ </span>
+                <span>₩ {balance}</span>
             </div>
 
         </>
