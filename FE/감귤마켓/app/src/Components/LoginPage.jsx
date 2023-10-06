@@ -25,6 +25,7 @@ function LoginPage({ handlePage }) {
                     "Content-type": "application/json"
                 },
                 body: JSON.stringify(loginData)
+                // JSON.stringify(loginData)는 JavaScript의 JSON.stringify() 메서드를 사용하여 JavaScript 객체 loginData를 JSON 문자열로 변환하는 역할을 합니다. 이것은 일반적으로 API 요청 시에 서버로 데이터를 전송하기 위해 사용됩니다.
 
             })
             const json = await res.json()
