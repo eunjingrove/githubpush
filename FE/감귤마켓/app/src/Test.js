@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import LoginPage2 from './Components/LoginPage2'
+import JoinPage2 from './Components/JoinPage2';
 
 function Test() {
     const [info, setInfo] = useState('');
@@ -29,6 +30,7 @@ function Test() {
                 <li>{info}</li>
             </ul>
             <LoginPage2 />
+            <JoinPage2 />
         </>
     )
 }
