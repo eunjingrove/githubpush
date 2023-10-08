@@ -15,14 +15,26 @@ function LoginPage2() {
                 password: password
             }
         }
-        const res = await fetch(url, {
-            method: 'POST',
-            headers: {
-                'Content-type': 'application/json'
-            },
-            body: JSON.stringify(loginData)
-        })
-        const result = await res.json()
+
+        try {
+            const res = await fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-type': 'application/json'
+                },
+                body: JSON.stringify(loginData)
+            })
+            const result = await res.json()
+            const token = result.user.token;
+            if (!result.user) {
+                return
+            }
+
+            localStorage.setItem('token', token)
+
+        } catch (error) {
+            alert('로그인에 실패했습니다.')
+        }
 
 
     }
