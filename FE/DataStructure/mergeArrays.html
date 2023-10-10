@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        // 두 개의 정렬된 배열을 병합하고 정렬합니다. 
+        function mergeSortedArrays(arr1, arr2) {
+            if (arr1.length === 0) {
+                return arr2
+            } else if (arr2.length === 0) {
+                return arr1
+            }
+            return arr1.concat(arr2).sort((a, b) => a - b)
+        }
+
+        const mergeSortedArrays2 = (arr1, arr2) => {
+            const mergedArr = [...arr1] + ',' + [...arr2]
+            return (mergedArr.split(',').sort((a, b) => a - b).map(v => Number(v)))
+        }
+
+    </script>
+</body>
+
+</html>
