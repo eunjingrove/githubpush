@@ -1,27 +1,28 @@
 import React, { useState } from 'react'
-import { useDispatch } from 'react-redux';
 import { addExpenseAction } from '../../test-store/expense/expense-slice';
+import { useDispatch } from 'react-redux'
 
 function ExpenseInput() {
     const [name, setName] = useState('');
     const [price, setPrice] = useState(0);
     const dispatch = useDispatch();
 
-    function submit(e) {
+    const expenseInputSubmit = (e) => {
         e.preventDefault()
         dispatch(addExpenseAction({ name, price }))
     }
 
     return (
-        // 지출 입력
-        <form onSubmit={submit}>
+        <form onSubmit={expenseInputSubmit}>
             <label>
-                <input type='text' placeholder='예) 사과' onChange={(e) => setName(e.target.value)} />
+                상품명
+                <input type='text' value={name} onChange={(e) => setName(e.target.value)} />
             </label>
             <label>
-                <input type='number' placeholder='예) 5000' onChange={(e) => setPrice(parseInt(e.target.value))} />
+                지출금
+                <input type='number' value={price} onChange={(e) => setPrice(parseInt(e.target.value))} />
             </label>
-            <button>추가</button>
+            <button>추가하기</button>
         </form>
     )
 }

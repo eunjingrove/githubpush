@@ -1,21 +1,22 @@
 import { createSlice } from '@reduxjs/toolkit'
 
+
 const expenseSlice = createSlice({
     name: 'expenseSlice',
     initialState: {
-        expenseList: [{ name: '커피', price: 5000 }, { name: '케익', price: 59000 }],
-        income: 1000000
+        expenseList: [{ name: 'coffee', price: 5000 }, { name: 'snack', price: 1500 }]
+        , income: 10000000
     },
     reducers: {
         addExpenseAction: (currentSlice, action) => {
-            currentSlice.expenseList.push(action.payload)
+            currentSlice.expenseList.push(action.payload);
         },
-        setIncomeAction: (currentSlice, action) => {
-            currentSlice.income = action.payload
+        incomeExpenseAction: (currentSlice, action) => {
+            currentSlice.income = action.payload;
         }
     }
 })
 
-export const { addExpenseAction, setIncomeAction } = expenseSlice.actions;
+export const { addExpenseAction, incomeExpenseAction } = expenseSlice.actions;
 
 export default expenseSlice.reducer;
